@@ -36,7 +36,7 @@ You need **Python 3** installed on your computer.
 
 Open **Command Prompt** (Windows) or **Terminal** (macOS/Linux) and type:
 
-python --version
+     python --version
 
 If you get a version like Python 3.10 or higher, you’re good to go.
 
@@ -47,17 +47,22 @@ Step 2 — Install the required libraries
 
 Once Python is installed, open a Command Prompt and run this command:
 
-python -m pip install pillow numpy
+     python -m pip install pillow numpy
 
 🚀 How to Use the Script
 1. Download the file : convert_normals_inplace
 2. Place it anywhere convenient eg : C:\Tools\convert_normals_inplace.py
 3. Open Command Prompt in that same folder, or navigate to it:
 4. Run one of the following commands:
-   ➤ To Convert from OpenGL → DirectX
+
+➤ To Convert from OpenGL → DirectX
+      
       python convert_normals_inplace.py "D:\Your\Top\Folder" --mode ogl2dx --suffix _DX
-   ➤ To Convert from DirectX → OpenGL
-   python convert_normals_inplace.py "D:\Your\Top\Folder" --mode dx2ogl --suffix _GL
+
+➤ To Convert from DirectX → OpenGL
+   
+      python convert_normals_inplace.py "D:\Your\Top\Folder" --mode dx2ogl --suffix _GL
+
    
 
    | Flag           | Description                                           |
@@ -66,7 +71,7 @@ python -m pip install pillow numpy
 | `--keep-ext`   | Keep original file extension instead of saving as PNG |
 
 
-- Examples :
+- Example :
   
 D:\3D_Assets\
  ├─ rocks\
@@ -79,6 +84,7 @@ D:\3D_Assets\
 Run: python convert_normals_inplace.py "D:\3D_Assets" --mode ogl2dx --suffix _DX
 
 Result:
+
 D:\3D_Assets\
  ├─ rocks\
  │   ├─ rock_normal_map.png
@@ -87,18 +93,18 @@ D:\3D_Assets\
  │   ├─ wall_normal_map.tga
  │   ├─ wall_normal_map_DX.png   ← converted version
 
+
 🧠 Notes
 
 The conversion only flips the Y (green) channel — that’s the only difference between OpenGL and DirectX normal maps.
-
 The script is non-destructive — your originals are safe.
-
 Works with high-res textures (tested up to 8K).
+
 
 🧑‍💻 Author
 
 Zakarya CHIOUA
-3D Game Artist & Photogrammetry Specialist
+3D Game Artist
 CLOVER 
 
 MIT License — free to use, modify, and share.
