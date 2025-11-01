@@ -1,0 +1,10 @@
+- Open CMD from the folder where the Python script located 
+
+# OpenGL -> DirectX, recurse subfolders, save next to originals as PNG with _DX suffix
+python convert_normals_inplace.py "D:\Your\Top\Folder" --mode ogl2dx --suffix _DX
+
+# DirectX -> OpenGL, keep original extension
+python convert_normals_inplace.py "D:\Your\Top\Folder" --mode dx2ogl --suffix _GL --keep-ext
+
+# It also works on a single file:
+python convert_normals_inplace.py "D:\Assets\rocks\rock_normal_map.png"
