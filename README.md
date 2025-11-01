@@ -1,4 +1,3 @@
-//MIT License — free to use, modify, and share.
 # batch-normal-map-converter
 A Python tool to batch convert OpenGL normal maps to DirectX or viceversa, by flipping the green channel.
 # 🌀 Batch Normal Map Converter (OpenGL ↔ DirectX)
@@ -34,6 +33,7 @@ You don’t need to convert one by one — it does all of them automatically.
 You need **Python 3** installed on your computer.
 
 ### 🔹 Step 1 — Check if Python is installed
+
 Open **Command Prompt** (Windows) or **Terminal** (macOS/Linux) and type:
 
 python --version
@@ -55,15 +55,15 @@ python -m pip install pillow numpy
 3. Open Command Prompt in that same folder, or navigate to it:
 4. Run one of the following commands:
    ➤ To Convert from OpenGL → DirectX
-   python convert_normals_inplace.py "D:\Your\Top\Folder" --mode ogl2dx --suffix _DX
+      python convert_normals_inplace.py "D:\Your\Top\Folder" --mode ogl2dx --suffix _DX
    ➤ To Convert from DirectX → OpenGL
    python convert_normals_inplace.py "D:\Your\Top\Folder" --mode dx2ogl --suffix _GL
+   
 
    | Flag           | Description                                           |
 | -------------- | ----------------------------------------------------- |
 | `--suffix _DX` | Text added to converted file name                     |
 | `--keep-ext`   | Keep original file extension instead of saving as PNG |
-
 
 
 - Examples :
