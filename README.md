@@ -1,4 +1,3 @@
-# batch-normal-map-converter
 A Python tool to batch convert OpenGL normal maps to DirectX or viceversa, by flipping the green channel.
 # 🌀 Batch Normal Map Converter (OpenGL ↔ DirectX)
 
@@ -106,5 +105,8 @@ Works with high-res textures (tested up to 8K).
 Zakarya CHIOUA
 3D Game Artist
 CLOVER 
+https://www.linkedin.com/company/clover-studio-ma
+https://x.com/clover_morocco
+https://www.instagram.com/clover.studio.ma/
 
 MIT License — free to use, modify, and share.
