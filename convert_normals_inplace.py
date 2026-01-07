@@ -32,7 +32,8 @@ VALID_EXTS = {'.png', '.jpg', '.jpeg', '.tga', '.tif', '.tiff', '.bmp', '.webp',
 
 def looks_like_normal_map(filename: str) -> bool:
     n = filename.lower()
-    return ("normal" in n) and ("map" in n)
+    return "normal" in n
+
 
 def _has_alpha_mode(mode: str) -> bool:
     return mode in ('RGBA', 'LA', 'PA')
